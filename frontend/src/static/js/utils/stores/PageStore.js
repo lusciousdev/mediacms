@@ -64,7 +64,7 @@ class PageStore extends EventEmitter {
       mediaAutoPlay: browserCache.get('media-auto-play'),
     };
 
-    page_config.mediaAutoPlay = null !== page_config.mediaAutoPlay ? page_config.mediaAutoPlay : true;
+    page_config.mediaAutoPlay = null !== page_config.mediaAutoPlay ? page_config.mediaAutoPlay : false;
 
     this.browserEvents = BrowserEvents();
     this.browserEvents.doc(this.onDocumentVisibilityChange.bind(this));
